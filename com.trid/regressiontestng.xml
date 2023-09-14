@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="Smoke"></include>
+		</run>
+	</groups>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="practicepackage.ProductTestNGTest">
+		  <methods>
+			  <include name="deleteProduct"></include>
+			  <include name="modifyProduct"></include>
+		  </methods>
+		  </class>
+      <class name="practicepackage.EmployeeTestNGTest"/>
+      <class name="practicepackage.SupplierTestNGTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

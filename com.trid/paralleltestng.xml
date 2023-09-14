@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+  <test name="TestRunner-1">
+    <classes>
+      <class name="practicepackage.ProductTestNGTest">
+      <methods>
+		  <include name="modifyProduct"></include>
+	  </methods>
+      </class>
+      </classes>
+      </test>
+      <test name="TestRunner-2">
+		  <classes>
+      <class name="practicepackage.UserTestNGTest">
+		  <methods>
+			  <include name="modifyUser"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
